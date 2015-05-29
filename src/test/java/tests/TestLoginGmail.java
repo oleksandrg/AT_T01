@@ -20,7 +20,7 @@ public class TestLoginGmail {
     @Before
     public void setup(){
         driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
         driver.navigate().to("https://mail.google.com/");
     }
 
@@ -32,8 +32,6 @@ public class TestLoginGmail {
         Assert.assertTrue(homePage.getUserNameVisible());
         homePage.sendEmail("test@test.com", "text", "text2");
     }
-
-
 
     @After
     public void end() throws Exception{

@@ -13,7 +13,6 @@ public class GmailLoginPage {
 
     WebDriver driver;
 
-
     @FindBy (name = "Email")
     WebElement userEmail;
 

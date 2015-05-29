@@ -36,7 +36,7 @@ public class GmailHomePage {
         PageFactory.initElements(driver, this);
     }
 
-    public Boolean  getUserNameVisible() {
+    public Boolean getUserNameVisible() {
         return  userName.isDisplayed();
     }
 
