@@ -24,16 +24,20 @@ public class TestLoginGmail {
         driver.navigate().to("https://mail.google.com/");
     }
 
+
     @Test
-    public void loginIn(){
+    public void AloginIn(){
         GmailLoginPage loginPage = new GmailLoginPage(driver);
         GmailHomePage homePage = loginPage.logIn("at.test.ag", "test13test");
         Assert.assertTrue(homePage.getUserNameVisible());
+        homePage.sendEmail("test@test.com", "text", "text2");
     }
+
+
 
     @After
     public void end() throws Exception{
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         //driver.quit();
     }
 }

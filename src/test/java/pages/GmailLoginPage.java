@@ -13,6 +13,7 @@ public class GmailLoginPage {
 
     WebDriver driver;
 
+
     @FindBy (name = "Email")
     WebElement userEmail;
 
@@ -38,6 +39,7 @@ public class GmailLoginPage {
     public void pressNext(){
         nextButton.sendKeys(Keys.ENTER);
     }
+
 
     public void pressSignIn(){
         signInButton.sendKeys(Keys.ENTER);
